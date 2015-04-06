@@ -1,13 +1,13 @@
 
 #Contents
 
-This package contains a Python implementation of the *I-measure* used for evaluating grammatical error correction systems. A full description of the method can be found in the following paper, which should be cited when using the script.
+This package contains a Python implementation of the **I-measure** used for evaluating grammatical error correction systems. A full description of the method can be found in the following paper, which should be cited when using the script.
 
-```Mariano Felice and Ted Briscoe. 2015. Towards a standard evaluation method for grammatical error detection and correction. In Proceedings of the 2015 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL-HLT 2015), Denver, CO. Association for Computational Linguistics. (To appear)```
+> Mariano Felice and Ted Briscoe. 2015. Towards a standard evaluation method for grammatical error detection and correction. In Proceedings of the 2015 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL-HLT 2015), Denver, CO. Association for Computational Linguistics. (To appear)
 
 #Requirements
 
-This scripts were coded in Python 2.7 and require the `xml.etree.cElementTree` library (usually shipped with Python by default).
+These scripts were coded in Python 2.7 and require the `xml.etree.cElementTree` library (usually shipped with Python by default).
 
 #Usage
 
@@ -15,7 +15,7 @@ This scripts were coded in Python 2.7 and require the `xml.etree.cElementTree` l
 
 You can evaluate a system's output by issuing the following command:
 
-`python ieval.py -hyp:*system_output_file* -ref:*gold_standard_file*`
+`python ieval.py -hyp:system_output_file -ref:gold_standard_file`
 
 where *system_output_file* is the plain text output produced by an error correction system and *gold_standard_file* is an XML-formatted gold-standard file containing each source sentence with its errors and corrections. You can test the script using the example files provided, e.g.:
 
@@ -27,7 +27,7 @@ This will print a table showing the results for the whole input corpus. Apart fr
 
 The full set of options accepted by the evaluation script is as follows:
 
-python ieval.py -ref:<file> -hyp:<file> [-nomix] [-max:<metric>] [-opt:sent|corpus] [-b:<n>] [-w:<n>] [-per-sent] [-v] [-vv]
+`python ieval.py -ref:<file> -hyp:<file> [-nomix] [-max:<metric>] [-opt:sent|corpus] [-b:<n>] [-w:<n>] [-per-sent] [-v] [-vv]`
 
 where:
 
@@ -46,6 +46,9 @@ where:
 -opt   : Optimise scores at the sentence or corpus level. Default is *sent*.
 -v     : Verbose output.
 -vv    : Very verbose output.
+
+These options can be specified in any order. Those within brackets are optional and will take their default values when omitted.
+
 
 #Gold standard file format
 
