@@ -74,7 +74,7 @@ Gold standard references should be provided in XML format according to the follo
 <!ATTLIST error req NMTOKEN #REQUIRED>
   <!-- Whether a correction is required for the error (yes/no)-->
 <!ATTLIST error type NMTOKEN #REQUIRED>
-  <!-- Error type -->
+  <!-- Error type string -->
 <!ATTLIST alt ann CDATA #REQUIRED>
   <!-- Id of the annotator providing the alternative -->
 <!ATTLIST c end CDATA #REQUIRED>
