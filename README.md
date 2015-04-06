@@ -3,8 +3,7 @@
 
 This package contains a Python implementation of the **I-measure** used for evaluating grammatical error correction systems. A full description of the method can be found in the following paper, which should be cited whenever you use the script in your work:
 
-
-Mariano Felice and Ted Briscoe. 2015. **Towards a standard evaluation method for grammatical error detection and correction**. In Proceedings of the 2015 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL-HLT 2015), Denver, CO. Association for Computational Linguistics. (To appear)
+> Mariano Felice and Ted Briscoe. 2015. **Towards a standard evaluation method for grammatical error detection and correction**. In Proceedings of the 2015 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL-HLT 2015), Denver, CO. Association for Computational Linguistics. (To appear)
 
 #Requirements
 
