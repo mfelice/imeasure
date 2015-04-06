@@ -32,21 +32,21 @@ The full set of options accepted by the evaluation script is as follows:
 
 where:
 
--ref   : XML file containing gold standard annotations.
--hyp   : Plain text file containing sentence hypotheses (one per line).
--nomix : Do not mix corrections from different annotators; match the best individual reference instead.
-         By default, the scorer will mix such corrections in order to maximise matches. This option disables 
-         default behaviour.
--max   : Maximise scores for the specified metric: dp, dr, df, dacc, dwacc, di, cp, cr, cf, cacc, cwacc or ci.
-         Preceding 'd' is for detection, 'c' for correction. Available metrics are: tp (true positives), 
-         tn (true negatives), fp (false positives), fn (false negatives), p (precision), r (recall), 
-         f (F measure), acc (accuracy), wacc (weighted accuracy), i (improvement on wacc). Default is ''' + max_a + max_m + '''.
--b     : Specify beta for the F measure. Default is *1.0*.
--w     : Specify weight of true and false positives for weighted accuracy. Default is *2.0*.
--per-sent : Show individual results for each sentence.
--opt   : Optimise scores at the sentence or corpus level. Default is *sent*.
--v     : Verbose output.
--vv    : Very verbose output.
+-ref   | XML file containing gold standard annotations.
+-hyp   | Plain text file containing sentence hypotheses (one per line).
+-nomix | Do not mix corrections from different annotators; match the best individual reference instead.
+       | By default, the scorer will mix such corrections in order to maximise matches. This option disables 
+       | default behaviour.
+-max   | Maximise scores for the specified metric: dp, dr, df, dacc, dwacc, di, cp, cr, cf, cacc, cwacc or ci.
+       | Preceding 'd' is for detection, 'c' for correction. Available metrics are: tp (true positives), 
+       | tn (true negatives), fp (false positives), fn (false negatives), p (precision), r (recall), 
+       | f (F measure), acc (accuracy), wacc (weighted accuracy), i (improvement on wacc). Default is ''' + max_a + max_m + '''.
+-b     | Specify beta for the F measure. Default is *1.0*.
+-w     | Specify weight of true and false positives for weighted accuracy. Default is *2.0*.
+-per-sent | Show individual results for each sentence.
+-opt   | Optimise scores at the sentence or corpus level. Default is *sent*.
+-v     | Verbose output.
+-vv    | Very verbose output.
 
 These options can be specified in any order. Those within brackets are optional and will take their default values when omitted.
 
