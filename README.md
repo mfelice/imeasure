@@ -48,7 +48,7 @@ These parameters can be specified in any order. Those within brackets are option
 
 ## Gold standard file format
 
-The gold standard references should be provided in XML format according to the following DTD:
+Gold standard references should be provided in XML format according to the following DTD:
 
 ```
 <!DOCTYPE GOLD-STANDARD [
@@ -57,25 +57,33 @@ The gold standard references should be provided in XML format according to the f
 <!ELEMENT script (sentence)>
 <!ELEMENT sentence (text,error-list)>
 <!ELEMENT text (#PCDATA)>
+  <!-- Tokenised text of a sentence -->
 <!ELEMENT error-list (error)+>
 <!ELEMENT error (alt)+>
+  <!-- Each of the errors in a sentence -->
 <!ELEMENT alt (c)+>
+  <!-- Each of alternatives for correcting an error -->
 <!ELEMENT c (#PCDATA)>
+  <!-- Each individual correction that makes up an alternative -->
 
 <!ATTLIST script id CDATA #REQUIRED>
 <!ATTLIST sentence id CDATA #REQUIRED>
 <!ATTLIST sentence numann CDATA #REQUIRED>
+  <!-- Total number of annotators for a sentence -->
 <!ATTLIST error id CDATA #REQUIRED>
 <!ATTLIST error req NMTOKEN #REQUIRED>
+  <!-- Whether a correction is required for the error (yes/no)-->
 <!ATTLIST error type NMTOKEN #REQUIRED>
+  <!-- Error type -->
 <!ATTLIST alt ann CDATA #REQUIRED>
+  <!-- Id of the annotator providing the alternative -->
 <!ATTLIST c end CDATA #REQUIRED>
+  <!-- Start position of a token requiring a correction in the original sentence  -->
 <!ATTLIST c start CDATA #REQUIRED>
-
+  <!-- End position of a token requiring a correction in the original sentence  -->
 ]>
 ```
-
-The `example` directory contains a sample file (`gold.xml`).
+The `example` directory contains a sample XML gold-standard file (`gold.xml`).
 
 # Licence
 
