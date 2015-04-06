@@ -83,7 +83,8 @@ Gold standard references should be provided in XML format according to the follo
   <!-- End position of a token requiring a correction in the original sentence  -->
 ]>
 ```
-The `example` directory contains a sample XML gold-standard file (`gold.xml`).
+
+Check out `example/gold.xml` for an example.
 
 # Licence
 
