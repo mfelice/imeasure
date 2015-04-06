@@ -31,6 +31,8 @@ The full set of options accepted by the evaluation script is as follows:
 
 where:
 
+Parameter | Description
+-----------------------
 -ref   | XML file containing gold standard annotations.
 -hyp   | Plain text file containing sentence hypotheses (one per line).
 -nomix | Do not mix corrections from different annotators; match the best individual reference instead.
