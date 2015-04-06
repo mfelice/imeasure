@@ -1,9 +1,9 @@
 
-#Contents
+#I-measure
 
-This package contains a Python implementation of the **I-measure** used for evaluating grammatical error correction systems. A full description of the method can be found in the following paper, which should be cited whenever you use the script in your work:
+This repository contains a Python implementation of the **I-measure**, a metric used for evaluating grammatical error correction systems. A full description of the method can be found in the following paper, which should be cited whenever you use the script in your work:
 
-> Mariano Felice and Ted Briscoe. 2015. **Towards a standard evaluation method for grammatical error detection and correction**. In Proceedings of the 2015 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL-HLT 2015), Denver, CO. Association for Computational Linguistics. (To appear)
+> Mariano Felice and Ted Briscoe. 2015. [**Towards a standard evaluation method for grammatical error detection and correction**](http://www.cl.cam.ac.uk/~mf501/pub/docs/2015-naacl.pdf). In Proceedings of the 2015 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL-HLT 2015), Denver, CO. Association for Computational Linguistics. (To appear)
 
 #Requirements
 
@@ -37,7 +37,7 @@ Parameter | Description
 -hyp      | Plain text file containing sentence hypotheses (one per line).
 -nomix    | Do not mix corrections from different annotators; match the best individual reference instead. By default, the scorer will mix such corrections in order to maximise matches. This option disables default behaviour.
 -max      | Maximise scores for the specified metric: dp, dr, df, dacc, dwacc, di, cp, cr, cf, cacc, cwacc or ci. Preceding 'd' is for detection, 'c' for correction. Available metrics are: tp (true positives), tn (true negatives), fp (false positives), fn (false negatives), p (precision), r (recall), f (F measure), acc (accuracy), wacc (weighted accuracy), i (improvement on wacc). Default is **cwacc**.
--b        | Specify beta for the F measure. Default is *1.0*.
+-b        | Specify beta for the F measure. Default is **1.0**.
 -w        | Specify weight of true and false positives for weighted accuracy. Default is **2.0**.
 -per-sent | Show individual results for each sentence.
 -opt      | Optimise scores at the sentence or corpus level. Default is **sent**.
