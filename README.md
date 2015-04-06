@@ -33,24 +33,32 @@ where:
 
 Parameter | Description
 ----------|------------
--ref   | XML file containing gold standard annotations.
--hyp   | Plain text file containing sentence hypotheses (one per line).
--nomix | Do not mix corrections from different annotators; match the best individual reference instead.
-       | By default, the scorer will mix such corrections in order to maximise matches. This option disables 
-       | default behaviour.
--max   | Maximise scores for the specified metric: dp, dr, df, dacc, dwacc, di, cp, cr, cf, cacc, cwacc or ci.
-       | Preceding 'd' is for detection, 'c' for correction. Available metrics are: tp (true positives), 
-       | tn (true negatives), fp (false positives), fn (false negatives), p (precision), r (recall), 
-       | f (F measure), acc (accuracy), wacc (weighted accuracy), i (improvement on wacc). Default is ''' + max_a + max_m + '''.
--b     | Specify beta for the F measure. Default is *1.0*.
--w     | Specify weight of true and false positives for weighted accuracy. Default is *2.0*.
+-ref      | XML file containing gold standard annotations.
+-hyp      | Plain text file containing sentence hypotheses (one per line).
+-nomix    | Do not mix corrections from different annotators; match the best individual reference instead. By default, the scorer will mix such corrections in order to maximise matches. This option disables default behaviour.
+-max      | Maximise scores for the specified metric: dp, dr, df, dacc, dwacc, di, cp, cr, cf, cacc, cwacc or ci. Preceding 'd' is for detection, 'c' for correction. Available metrics are: tp (true positives), tn (true negatives), fp (false positives), fn (false negatives), p (precision), r (recall), f (F measure), acc (accuracy), wacc (weighted accuracy), i (improvement on wacc). Default is **cwacc**.
+-b        | Specify beta for the F measure. Default is *1.0*.
+-w        | Specify weight of true and false positives for weighted accuracy. Default is **2.0**.
 -per-sent | Show individual results for each sentence.
--opt   | Optimise scores at the sentence or corpus level. Default is *sent*.
--v     | Verbose output.
--vv    | Very verbose output.
+-opt      | Optimise scores at the sentence or corpus level. Default is **sent**.
+-v        | Verbose output.
+-vv       | Very verbose output.
 
-These options can be specified in any order. Those within brackets are optional and will take their default values when omitted.
-
+These parameters can be specified in any order. Those within brackets are optional and will take their default values when omitted.
 
 #Gold standard file format
+
+
+
+#Licence
+
+The MIT License (MIT)
+
+Copyright (c) 2015 Mariano Felice
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
