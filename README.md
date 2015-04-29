@@ -100,6 +100,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 # Contact
 
-If you have any questions or would like to report a bug, you can contact me at mariano dot felice at cl.cam.ac.uk.
+If you have any questions, suggestions or bug reports, you can contact me at mariano dot felice at cl.cam.ac.uk.
 
 
