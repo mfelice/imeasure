@@ -12,7 +12,6 @@
 import numpy
 import copy
 import os
-import time
 
 class Alignment:
     DUMMY = ''
