@@ -19,7 +19,7 @@ sys.setdefaultencoding('utf-8')
 help_str = \
 '''Usage: python ''' + sys.argv[0] + ''' -in:<file> [-out:<file>]
 \t -in:  Input .m2 file.
-\t -out: Output file, default is input filename .ieval.xml.
+\t -out: Output file. Default is input filename .ieval.xml.
 '''
 
 # Globals
