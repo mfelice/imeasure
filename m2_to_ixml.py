@@ -19,7 +19,7 @@ sys.setdefaultencoding('utf-8')
 help_str = \
 '''Usage: python ''' + sys.argv[0] + ''' -in:<file> [-out:<file>]
 \t -in:  Input .m2 file.
-\t -out: Output file, default is input filename .eval.xml.
+\t -out: Output file, default is input filename .ieval.xml.
 '''
 
 # Globals
@@ -106,7 +106,7 @@ f_in.close()
 
 # Create the output XML
 if not out_file:
-	out_file = in_file + ".eval.xml"
+	out_file = in_file + ".ieval.xml"
 f_out = XMLWriter(out_file, "UTF-8")
 f_out.declaration()
 f_out.start("scripts")
