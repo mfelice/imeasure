@@ -86,7 +86,15 @@ Gold standard references should be provided in XML format according to the follo
 
 Check out `example/gold.xml` for an example.
 
-# Licence
+## Converting an .m2 file to XML annotation
+
+You can use `m2_to_ixml.py` to convert an existing .m2 file to the XML format used by the I-measure evaluation script. Syntax is as follows:
+
+`python m2_to_ixml.py -in:<m2-file> [-out:<xml-file>]`
+
+This conversion script will do some basic automatic merging based on overlapping token positions. More sophisticated merging is required for better results.
+
+# License
 
 The MIT License (MIT)
 
